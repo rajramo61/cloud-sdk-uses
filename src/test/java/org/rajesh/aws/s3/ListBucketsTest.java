@@ -22,4 +22,9 @@ class ListBucketsTest {
         final List<String> buckets = listBuckets.getBuckets();
         Assertions.assertNotEquals(0, buckets.size());
     }
+
+    @Test
+    void getBucketPolicy() {
+        final String bucketPolicy = listBuckets.getBucketPolicy("udagram-dwivedi-dev");
+    }
 }
